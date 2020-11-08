@@ -136,9 +136,8 @@ function tagIt(content, tagName) {
  * @returns {string} 
  */
 function personRow (person) {
-  return `${tagIt(`${tagIt(person.name,"td")}${tagIt(person.born,"td")}${tagIt(person.died,"td")}${tagIt(person.affiliations,"td")}${tagIt(person.quote,"td")}`, "tr")}`;
+  return tagIt(`${tagIt(person.name,"td")}${tagIt(person.born,"td")}${tagIt(person.died,"td")}${tagIt(person.affiliations,"td")}${tagIt(person.quote,"td")}`,"tr");
 }
-console.log(personRow(sobukwe))
 //////////////////////////////////////////////////////////////////////////
 // Problem 1c: One last function in this part! This one should take as  //
 // its parameter an array of "person objects" and create a set of table //
@@ -169,11 +168,8 @@ console.log(personRow(sobukwe))
  * @returns {} string
  */
 function peopleRows (people) {
-  return '';
+  return tagIt(people.map(p => personRow(p)).join(''), 'table');
 }
-
-
-
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
 // MODIFYING THIS CODE WILL ALMOST CERTAINLY CAUSE YOUR TESTS TO BREAK
