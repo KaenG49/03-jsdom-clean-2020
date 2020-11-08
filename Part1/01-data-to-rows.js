@@ -105,7 +105,7 @@ leaders = [biko, tambo, mandela, tutu, ngoyi, sobukwe, goldberg, first];
  * @returns {string} 
  */
 function tagIt(content, tagName) {
-  return '';
+  return `<${tagName}>${content}</${tagName}>`;
 }
 
 
@@ -136,10 +136,9 @@ function tagIt(content, tagName) {
  * @returns {string} 
  */
 function personRow (person) {
-  return '';
+  return `${tagIt(`${tagIt(person.name,"td")}${tagIt(person.born,"td")}${tagIt(person.died,"td")}${tagIt(person.affiliations,"td")}${tagIt(person.quote,"td")}`, "tr")}`;
 }
-
-
+console.log(personRow(sobukwe))
 //////////////////////////////////////////////////////////////////////////
 // Problem 1c: One last function in this part! This one should take as  //
 // its parameter an array of "person objects" and create a set of table //
