@@ -27,8 +27,7 @@
  */
 function secondBoxBlue () {
   // set the background-color property of box #box2 to "blue"
-  return '';
-
+  return $('#box2').css("background-color","blue");
 }
 
 // Problem 2b: give the nav bar a bottom border
@@ -40,8 +39,8 @@ function secondBoxBlue () {
  */
 function navBorderBottom () {
   // give the nav bar a border-bottom property of "10px solid rgb(180,40,40)"
-  return '';
-  // return $()
+  return $('nav').css("border-bottom-style","solid"), $('nav').css("border-bottom-width","10px"),$('nav').css("border-bottom-color","rgb(180,40,40)");
+
 }
 
 // Problem 2c: Set the Text content of even-numbered boxes.
@@ -53,7 +52,7 @@ function navBorderBottom () {
 function evenBoxesText () {
   // add the text content "I am a box" to all the even-numbered boxes in <article>
   // hint: use the ":nth-child()" pseudo-selector.
-  return '';
+  //return ;
 }
 
 
@@ -85,7 +84,9 @@ function oddBoxesHtml () {
  * @returns {} 
  */
 function modifyNav ()  {
-  return '';
+  let k = "Kaan Gumrah";
+  k = k.replace("My", "Your");
+  return $('nav h1').html(), '';
 }
 
 
