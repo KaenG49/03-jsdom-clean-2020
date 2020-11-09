@@ -18,7 +18,7 @@ The block above uses fenced code blocks to show the table syntax; you might use 
 Another possible dataset could be a list of all the engagements of a nation in a war. Similiar to our javascript objects in the assignment, the object below could be a part of a list of all the Second World War engagements of Canada. According to wikipedia, there are 73 different engagements during World War Two that involve Canada. In the hypthetical javascript object below, the first engagement is depicted.
 
 let OpAbercrombie = {
-name: 'Operation Abercrombie',
+ame: 'Operation Abercrombie',
 beginning: '21 April 1942',
 end: '22 April 1942',
 location: 'Hardelot, France'
@@ -29,6 +29,10 @@ description: "Allied reconnaissance mission to Hardelot, France in 1942. Objecti
 ## Question 2 (150 words)
 
 #### Now describe another dataset for which Wikipedia would **not** be as good a resource. What does this tell you about the limitations of Wikipedia? WHat kind of work would you need to do to make useful links for this dataset?
+
+Wikipedia is extremely good at linking different kinds of qualitative and quantitative topics. However, datasets that rely on a lot of visual material may be better depicted on other platforms. If you are working on a project (e.g. a digital exhibition project) that requires an analysis of visual materials, such as 'Propaganda in Nazi Germany,' you will need a lot of visual material to expand on your topic. Although it is possible to add images and videos to Wikipedia via Wikimedia, Wikipedia datasets most certainly utilize text-based information more than media-based information. Therefore, Wikipedia is not a useful resource if you are looking for visual material. In order to improve these types of datasets, images from other websites could be anchored to Wikipedia articles. In the specific case of 'Propaganda in Nazi Germany,' images from other scholarly websites that depict historically accurate images/videos/artifacts could be anchored.
+
+'https://en.wikipedia.org/wiki/Propaganda_in_Nazi_Germany'
 
 ## Question 3 (150 words)
 
